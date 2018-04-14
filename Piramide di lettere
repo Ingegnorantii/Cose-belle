@@ -43,7 +43,7 @@ int main ()
         
         printf("\n");
         numelem = numelem + 2;
-        num_= num_ - 2;  //S ottraggo due poichè perchè il numero degli elemnti aumenta di due, se non facessi così la piramide verrebbe sfalsata //
+        num_= num_ - 2;  //Sottraggo due poichè il numero degli elemnti aumenta di due, se non facessi così la piramide verrebbe sfalsata //
         
     }
         
