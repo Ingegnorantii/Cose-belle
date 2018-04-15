@@ -4,7 +4,7 @@ int main ()
 {
     char carattere;
    	int i, j;
-    int numrighe, num_, numelem;
+    int numrighe=0, num_, numelem;
     
     while (numrighe == 0)
     {
