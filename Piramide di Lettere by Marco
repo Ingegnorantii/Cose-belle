@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main()
+{
+	int a=0,b=0,i=0,j=0,g=0;
+	char k;
+	
+	printf("Inserisci un numero da 1 a 26:");
+	scanf("%d",&a);
+	while((a<1)||(a>26))
+	{
+		printf("Si prega di inserire un numero compreso tra 1 e 26:");
+		scanf("%d",&a);
+		
+	}
+   	    b=a;// imposto una variabile b=a che utilizzerò per gestirmi lo spazio nella piramide
+		
+		for(i=0;i<a;i++) //un for che scorre da 0 fino al numero inserito dall'utente
+    	{
+    		
+    		k='@'; //variabile char che ci servirà per far visualizzare le lettere
+    		
+			for(j=0;j<b;j++) //for per la gestione dello spazio 
+    		{
+    			printf(" ");
+    		
+		    }
+				
+				for(g=0;g<=i;g++) //for per la gestione degli elementi da visualizzare
+				{
+				   k=k+1;         //faccio l'aumento di 1 finchè g non è = ad i 
+				   printf("%c",k);
+				   
+		        }
+		        for(g=i-1;g>=0;g--) //secondo for per la gestione degli elementi che decresce per rappresentare
+				{                   //gli elementi precedenti
+				   
+				   k=k-1;           //diminuisco di 1 finchè non arrivo a 0
+				   printf("%c",k);
+				   
+		        }
+		      b--;                 //decremento degli spazi
+			  printf("\n");    
+			
+		}
+
+return 0;	
+}
