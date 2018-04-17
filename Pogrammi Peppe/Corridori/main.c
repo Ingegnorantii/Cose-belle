@@ -4,12 +4,12 @@
 //Programma principale
 int main()
 {
-	int corA,corB,corTemp;									//Corridori
-	float tempA=999,tempB=999,tempTemp;						//Tempi
-	for(int i=0; i<8;i++)
-	{
-		do
-		{
+	int corA,corB,corTemp;		 //Corridori (CorA, CorB Sono i due migliori corridori; corTemp è quello che viene confrontato man mano)
+	float tempA=999,tempB=999,tempTemp;		//Tempi (TempA,TempB Sono i due tempi migliori, tempTemp è quello messo a confronto man mano)
+	for(int i=0; i<8;i++)				//Non rompete più il cazzo, grazie.
+	{						//Scherzo...
+		do					//Però seriamente... no.
+		{					
 			printf("Dammi l'id del corridore n° %d (Tra 1 e 255)",i+1);	//Controllo dell'id
 			scanf("%d", &corTemp);
 		}
