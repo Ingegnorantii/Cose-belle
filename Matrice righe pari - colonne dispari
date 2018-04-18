@@ -5,7 +5,7 @@ int main()
     int n;
     int i,j;
     int elem;
-    
+    printf("Marco è Kawaiiii c:");
     do
     {
         printf("Inserisci un valore: ");
