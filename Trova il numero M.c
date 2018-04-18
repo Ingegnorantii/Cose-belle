@@ -18,5 +18,6 @@ int main()
       printf("il numero m massimo: %d", m);
     m++;
   }
+  printf("Miao.");
   return 0;
 }
