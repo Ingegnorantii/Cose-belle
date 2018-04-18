@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int i,j;
+    int elem;
+    
+    do
+    {
+        printf("Inserisci un valore: ");
+        scanf("%d", &n);
+        
+    } while ((n<=0)||(n>100));
+    
+    elem = n*n;
+    
+    for (i=0; i<n; i++)
+    {
+        for (j=0; j<n; j++)
+        {
+            elem = elem - 1;
+            
+            if ((i%2 == 0) && (j%2 != 0))
+                
+                printf("%d ", elem);
+            
+            else
+                
+                continue;
+            
+        }
+        
+        printf("\n");
+        
+    }
+    
+    return 0;
+    
+}
