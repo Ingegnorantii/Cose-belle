@@ -1,67 +1,59 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+#include <stdio.h>
 
-\f0\fs24 \cf0 #include <stdio.h>\
-\
-int main( )\
-\{\
-    int a, b, c;\
-    int kind;\
-    \
-    printf("Inserisci la misura del primo lato\n");\
-    scanf("%d", &a);\
-    \
-    printf("Inserisci la misura del secondo lato\\n");\
-    scanf("%d", &b);\
-    \
-    printf("Inserisci la misura del terzo lato\\n");\
-    scanf("%d", &c);\
-    \
-    if(( a == b)&&(b==c))\
-    \{\
-        printf("Il triangolo \'e8 equilatero\\n");\
-        kind = 0;\
-    \}\
-    \
-    else if ((a == b)||(b == c)||(c == a))\
-    \{\
-        printf("il triangolo \'e8 isoscele\\n");\
-        kind = 1;\
-    \}\
-    \
-    else if((a*a == b*b + c*c)||(b*b == a*a + b*b)||(c*c==a*a + b*b))\
-    \{\
-        printf("il triangolo \'e8 rettangolo\\n");\
-        kind = 2;\
-    \}\
-    \
-    else\
-    \{\
-        printf("il triangolo \'e8 scaleno\\n");\
-        kind = 3;\
-    \}\
-   \
-    switch (kind)\
-    \{ case 0:\
-            puts ("il triangolo ha tutti i lati uguali");\
-            \
-        case 1:\
-            puts ("il triangolo ha due lati uguali");\
-            \
-        case 2:\
-            puts ("il triangolo ha un angolo di 90 gradi");\
-            \
-        case 3:\
-            puts ("il triangolo ha tutti i lati diversi");\
-    \}\
-    \
-    return 0;\
-\}\
-\
-\
-\
+int main( )
+{
+    int a, b, c;
+    int kind;
+    
+    printf("Inserisci la misura del primo lato\n");
+    scanf("%d", &a);
+    
+    printf("Inserisci la misura del secondo lato\n");
+    scanf("%d", &b);
+    
+    printf("Inserisci la misura del terzo lato\n");
+    scanf("%d", &c);
+    
+    if(( a == b)&&(b==c))
+    {
+        printf("Il triangolo è equilatero\n");
+        kind = 0;
+    }
+    
+    else if ((a == b)||(b == c)||(c == a))
+    {
+        printf("il triangolo è isoscele\n");
+        kind = 1;
+    }
+    
+    else if((a*a == b*b + c*c)||(b*b == a*a + b*b)||(c*c==a*a + b*b))
+    {
+        printf("il triangolo è rettangolo\n");
+        kind = 2;
+    }
+    
+    else
+    {
+        printf("il triangolo è scaleno\n");
+        kind = 3;
+    }
+   
+    switch (kind)
+    { case 0:
+            puts ("il triangolo ha tutti i lati uguali");
+            
+        case 1:
+            puts ("il triangolo ha due lati uguali");
+            
+        case 2:
+            puts ("il triangolo ha un angolo di 90 gradi");
+            
+        case 3:
+            puts ("il triangolo ha tutti i lati diversi");
+    }
+    
+    return 0;
 }
+
+
+
