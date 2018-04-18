@@ -3,7 +3,7 @@
 
 int main()
 {
-    int numrig, numelem, num_;
+    int numrig, num_;
     int i, j;
     int a;
     
