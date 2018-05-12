@@ -6,27 +6,14 @@ void printt(int);
 
 int main()
 {
-	int num,a=1,i,j;
+	int num,a=1;
 	
 	printf("Inserisci il numero: ");
 	scanf("%ld",&num);
 
 	
 	printh();
-    for(i=1;i<=num; i++)
-	{
-		printf("\n");
-		
-		for(j=1; j<=num; j++)
-		{
-			
-			    a=power(i,j);
-			    printt(a);
-			
-        }
-		
-		
-	}
+    printt(num);
 	
 	return 0;
 }
@@ -50,5 +37,20 @@ long power(int m, int n)
 
 void printt(int n)
 {
-	printf("%d ",n);
+	int i,j;
+	long a;
+	
+	for(i=1;i<=n; i++)
+	{
+		printf("\n");
+		
+		for(j=1; j<=n; j++)
+		{
+			
+				a=power(i,j);
+			    printf(" %ld ",a);
+        }
+		
+		
+	}
 }
