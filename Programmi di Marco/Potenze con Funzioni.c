@@ -6,14 +6,14 @@ void printt(int);
 
 int main()
 {
-	int num,a=1;
+	long num;
 	
 	printf("Inserisci il numero: ");
 	scanf("%ld",&num);
 
 	
 	printh();
-    printt(num);
+        printt(num);
 	
 	return 0;
 }
@@ -48,8 +48,8 @@ void printt(int n)
 		{
 			
 				a=power(i,j);
-			    printf(" %ld ",a);
-        }
+			        printf(" %ld ",a);
+                }
 		
 		
 	}
