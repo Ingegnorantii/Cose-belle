@@ -20,8 +20,7 @@ int main()
 		for(j=1; j<=num; j++)
 		{
 			
-				a=power(i,j);
-			    printf(" (%d)",i);
+			    a=power(i,j);
 			    printt(a);
 			
         }
