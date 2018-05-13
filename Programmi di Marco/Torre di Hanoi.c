@@ -13,7 +13,7 @@ int main()
 	
 	printf("Benvenuto al gioco della torre di Hanoi\n");
 	
-    printf("        ___                    |                    |         \n");
+        printf("        ___                    |                    |         \n");
 	printf("       |   |                   |                    |         \n");
 	printf("      _______                  |                    |         \n");
 	printf("     |       |                 |                    |         \n");
@@ -23,7 +23,7 @@ int main()
 	printf("         A                     B                    C         \n");
 	
 	printf("Con quanti dischi vuoi giocare?\n");
-    scanf("%d",&x);
+        scanf("%d",&x);
     
     torre(x,'A','C','B');
 	return 0;
